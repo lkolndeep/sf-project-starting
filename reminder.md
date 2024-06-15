@@ -19,6 +19,7 @@
     composer require symfony/validator
     composer require twig
     composer require --dev symfony/test-pack
+    composer require symfony/asset
 
     php bin/console make:controller
     php bin/console make:test
