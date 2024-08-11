@@ -1,4 +1,10 @@
-    composer create-project symfony/skeleton my_project
+    # for a traditional web app
+    composer create-project symfony/skeleton:"6.4.*" my_project_directory
+    cd my_project_directory
+    composer require webapp
+
+    # for a microservice, console application or API
+    composer create-project symfony/skeleton:"6.4.0" my_project_directory
 
     composer require symfony/maker-bundle --dev
     composer require symfony/orm-pack
