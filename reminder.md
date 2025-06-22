@@ -29,3 +29,6 @@
 
     php bin/console make:controller
     php bin/console make:test
+
+    composer require symfony/security-bundle
+    php bin/console make:user
