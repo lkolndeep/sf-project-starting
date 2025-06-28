@@ -26,9 +26,22 @@
     composer require twig
     composer require --dev symfony/test-pack
     composer require symfony/asset
+    composer require --dev symfony/profiler-pack
 
     php bin/console make:controller
+    php bin/console make:controller --no-template ApiLogin
     php bin/console make:test
 
+    # Security part
     composer require symfony/security-bundle
     php bin/console make:user
+
+    composer require symfonycasts/verify-email-bundle
+    php bin/console make:registration-form
+
+    # If you use the email verification
+    composer require symfony/mailer
+
+    # For the form login
+    php bin/console make:security:form-login
+
